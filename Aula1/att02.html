@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Atividade aula 6</title>
+    </head>
+
+    <body>
+        <script>
+          /*  var n1 = window.prompt("Digite um numero")
+            var n2 = window.prompt("Digite outro numero")
+            var soma = n1 + n2
+            window.alert("A soma eh" + soma)*/
+
+            //prompt pega uma string, entao o + vai concatenar, então é preciso converter de string para number
+            //Number.parseInt(n1)
+            //pode exibir string "" + string ou `${string}`
+
+            var n1 = Number.parseInt(window.prompt("Digite um numero"))
+            var n2 = Number.parseInt(window.prompt("Digite outro numero"))
+            var soma = n1 + n2
+            //posso usar apenas Number() e o js escolhe se é float ou int
+            window.alert(`A soma entre ${n1} e ${n2} eh ${soma}`)
+        </script>
+    </body>
+</html>

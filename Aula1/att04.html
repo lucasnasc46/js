@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Estudos em DOM</title>
+        <style>
+            body{
+                background-color: blueviolet;
+                color: aliceblue;
+                font: normal 18pt Arial;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Iniciando os estudo com de DOM</h1>
+        <p>resultado</p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
+        <div id="msg">cique aqui</div>
+
+        <script>
+           
+            var p1 = window.document.getElementsByTagName('p')[1]
+            window.document.write("content da tag pegada: " + p1.innerText)
+            window.document.write(p1.innerHTML)
+            
+            var d = window.document.getElementById('msg') 
+            d.style.background = 'green'
+            
+           // var d = window.document.querySelector('div#msg')
+            //d.style.color = 'blue'
+
+        </script>
+    </body>
+
+</html>
